@@ -15,3 +15,8 @@ func newInt *int {
 ```
 
 - 释不释放跟golang的GC有关系，记得golang用的是跟OC一样的基于引用计数的GC方案。所以即使是在函数内部alloc的，如果return回去了编译器会将这个对象的引用计数+1导致不会被GC回收。
+
+### gc调试
+```
+go run -gcflags '-m -l' main.go
+```

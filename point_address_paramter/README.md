@@ -83,7 +83,7 @@ func main() {
 }
 
 func pFoo(p *int) {
-	fmt.Printf("value: %#v\n", p) // 拷贝了b的值
+	fmt.Printf("value: %#v\n", p) // 拷贝了b的值(也就是a的地址)
 	fmt.Printf("addr: %#v\n", &p) // p的地址
 	*p = 2
 }

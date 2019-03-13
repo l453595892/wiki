@@ -1,5 +1,5 @@
 ## Golang高级技术（适合中高级gopher）
-注：在google上有很多初级入门级golang介绍,例如：[go语言圣经](https://wizardforcel.gitbooks.io/gopl-zh/index.html)
+注：在google上有很多初级入门级golang介绍,例如：[Go语言圣经](https://wizardforcel.gitbooks.io/gopl-zh/index.html)
 
 ### 栈中分配的变量，出栈的时候不会被释放吗
 

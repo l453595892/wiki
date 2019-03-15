@@ -28,5 +28,5 @@ go run -gcflags '-m -l' main.go
 
 ### Golang 汇编
 ```
-go tool compile -S main.go
+go build -gcflags -S x.go
 ```

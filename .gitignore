@@ -1,5 +1,5 @@
 .idea/
 
-.es_client/.idea/
+es_client/.idea/
 
-.grpc_gateway/.idea/
+grpc_gateway/.idea/

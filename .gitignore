@@ -1,5 +1,7 @@
 main.go
 
-./idea/
-./es_client/.idea/
-./grpc_gateway/.idea/
+.idea/
+
+.es_client/.idea/
+
+.grpc_gateway/.idea/

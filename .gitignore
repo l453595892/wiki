@@ -1,6 +1,4 @@
-main.go
-
-.idea/
+.idea/*
 
 .es_client/.idea/
 

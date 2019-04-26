@@ -21,12 +21,12 @@ func newInt *int {
 - 同步消除，如果你定义的对象的方法上有同步锁，但在运行时，却只有一个线程在访问，此时逃逸分析后的机器码，会去掉同步锁运行。
 
 ```
-go run -gcflags '-m -l' main.go
+go run -gcflags "-N -m -l" main.go \\禁止优化和内联，输出优化决策
 ```
 
 ### Golang使用pprof监控性能及GC调优
 
 ### Golang 汇编
 ```
-go tool compile -S main.go
+go build -gcflags -S x.go
 ```

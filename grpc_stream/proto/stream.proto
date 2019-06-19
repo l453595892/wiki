@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+// 包名: pipeline
+package pipeline;
+/*
+    服务名: Chat，
+    其中只有 名为“BindStream”的一个RPC服务，
+    输入是 Request格式的数据流， 输出是 Response 格式的数据流
+*/
+service Pipeline {
+    rpc BindStream(stream Request) returns (stream Response) {}
+}
+
+// 请求数据 Request格式定义
+message Request {
+    bytes input = 1;
+}
+// 响应数据Response格式定义
+message Response {
+    bytes output = 1;
+}
